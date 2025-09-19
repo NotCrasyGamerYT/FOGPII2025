@@ -1,0 +1,55 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 84e1b36045ddb6e439393618dc738f96, type: 3}
+  m_Name: IntroConvo
+  m_EditorClassIdentifier: 
+  lines:
+  - speaker: Dev
+    sentence: Hey, welcome to my game! (Press space to continue)
+    location: 1
+    portrait: {fileID: 7820491977990273890, guid: 6ac050cd0b36dd74da7403e463f22ef7, type: 3}
+  - speaker: Dev
+    sentence: This will be a point to click experience!
+    location: 1
+    portrait: {fileID: 7820491977990273890, guid: 6ac050cd0b36dd74da7403e463f22ef7, type: 3}
+  - speaker: Dev
+    sentence: This might turn into a phycological horror instead of puzzle game.
+    location: 1
+    portrait: {fileID: 7820491977990273890, guid: 6ac050cd0b36dd74da7403e463f22ef7, type: 3}
+  - speaker: Player
+    sentence: Dude, let me start
+    location: 0
+    portrait: {fileID: 0}
+  - speaker: Dev
+    sentence: Oh, right! My bad!
+    location: 1
+    portrait: {fileID: 0}
+  - speaker: Phone
+    sentence: '*ring**ring* Hey we got a homicide in the woods, I need you to go.'
+    location: 0
+    portrait: {fileID: 0}
+  - speaker: Player
+    sentence: '*sigh* I''m over 10 hours in overtime, can you send someone else?'
+    location: 1
+    portrait: {fileID: 0}
+  - speaker: Phone
+    sentence: Unforunately, you are closer to the area. I am sorry. *hangs up*
+    location: 0
+    portrait: {fileID: 0}
+  - speaker: Player
+    sentence: '*sigh* Here we go'
+    location: 1
+    portrait: {fileID: 0}
+  - speaker: System
+    sentence: Click on the car to contiue
+    location: 1
+    portrait: {fileID: 0}

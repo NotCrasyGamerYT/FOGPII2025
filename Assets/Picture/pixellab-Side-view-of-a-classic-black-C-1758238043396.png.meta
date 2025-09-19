@@ -1,10 +1,10 @@
 fileFormatVersion: 2
-guid: 44e525a510ce2484a8542277e042d6f2
+guid: daa7e9676b9ae7d44baa8bc80c83adef
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 3373983171478037719
-    second: west_0
+      213: -5640017027081611539
+    second: pixellab-Side-view-of-a-classic-black-C-1758238043396_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -100,13 +100,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: west_0
+      name: pixellab-Side-view-of-a-classic-black-C-1758238043396_0
       rect:
         serializedVersion: 2
-        x: 23
-        y: 9
-        width: 20
-        height: 51
+        x: 3
+        y: 42
+        width: 122
+        height: 38
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -115,8 +115,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 7d4281e71dbc2de20800000000000000
-      internalID: 3373983171478037719
+      spriteID: de655ad5562aab1b0800000000000000
+      internalID: -5640017027081611539
       vertices: []
       indices: 
       edges: []
@@ -135,7 +135,7 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      west_0: 3373983171478037719
+      pixellab-Side-view-of-a-classic-black-C-1758238043396_0: -5640017027081611539
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

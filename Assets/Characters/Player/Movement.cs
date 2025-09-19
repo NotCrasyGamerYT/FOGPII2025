@@ -21,6 +21,7 @@ public class Movement : MonoBehaviour
     {
         // Get input
         movement.x = Input.GetAxisRaw("Horizontal");
+        movement.y = Input.GetAxisRaw("Vertical");
 
         bool isWalking = movement.x != 0;
     animator.SetBool("IsWalking", isWalking);

@@ -1,10 +1,10 @@
 fileFormatVersion: 2
-guid: 44e525a510ce2484a8542277e042d6f2
+guid: 74f269a1248bfcc40b636da0e4d35915
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 3373983171478037719
-    second: west_0
+      213: 5159941472353468340
+    second: pixellab-Top-down--inside-view-of-a-rus-1758250978491_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -100,13 +100,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: west_0
+      name: pixellab-Top-down--inside-view-of-a-rus-1758250978491_0
       rect:
         serializedVersion: 2
-        x: 23
-        y: 9
-        width: 20
-        height: 51
+        x: 25
+        y: 13
+        width: 150
+        height: 165
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -115,8 +115,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 7d4281e71dbc2de20800000000000000
-      internalID: 3373983171478037719
+      spriteID: 4bf3f693e6bcb9740800000000000000
+      internalID: 5159941472353468340
       vertices: []
       indices: 
       edges: []
@@ -135,7 +135,7 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      west_0: 3373983171478037719
+      pixellab-Top-down--inside-view-of-a-rus-1758250978491_0: 5159941472353468340
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

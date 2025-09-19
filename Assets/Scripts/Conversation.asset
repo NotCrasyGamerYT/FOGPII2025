@@ -13,14 +13,10 @@ MonoBehaviour:
   m_Name: Conversation
   m_EditorClassIdentifier: 
   lines:
-  - speaker: PoliceMan
-    sentence: Lovely weather, eh?
-  - speaker: Player
-    sentence: What's the situation?
-  - speaker: PoliceMan
-    sentence: We only have a one dead body, unfortunately we can not identify the
-      victim.
-  - speaker: Player
-    sentence: Alright, I'll look into it.
-  - speaker: PoliceMan
-    sentence: Good luck, detective.
+  - speaker: Dev
+    sentence: "Hi! This is the end of the demo! This demo was to test my dialogue
+      system and the interactions. So,um, yeah. There wasn\u2019t much to offer but
+      there will be more soon! Scan the qr code in the bottom to leave a review!
+      Cheers!"
+    location: 0
+    portrait: {fileID: 0}

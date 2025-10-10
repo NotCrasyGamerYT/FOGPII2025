@@ -14,9 +14,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   lines:
   - speaker: Dev
-    sentence: "Hi! This is the end of the demo! This demo was to test my dialogue
-      system and the interactions. So,um, yeah. There wasn\u2019t much to offer but
-      there will be more soon! Scan the qr code in the bottom to leave a review!
-      Cheers!"
+    sentence: "Hello again! Apologies for the lack of content, I have been mainly
+      working on senior project for the past several weeks. I haven\u2019t touched
+      this game at all. Good news though! I finally have lore!! So I will need to
+      revamp the game and probably start over! Again, sorry for the lack of content! "
     location: 0
     portrait: {fileID: 0}

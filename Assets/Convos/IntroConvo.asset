@@ -13,26 +13,6 @@ MonoBehaviour:
   m_Name: IntroConvo
   m_EditorClassIdentifier: 
   lines:
-  - speaker: Dev
-    sentence: Hey, welcome to my game! (Press space to continue)
-    location: 1
-    portrait: {fileID: 7820491977990273890, guid: 6ac050cd0b36dd74da7403e463f22ef7, type: 3}
-  - speaker: Dev
-    sentence: This will be a point to click experience!
-    location: 1
-    portrait: {fileID: 7820491977990273890, guid: 6ac050cd0b36dd74da7403e463f22ef7, type: 3}
-  - speaker: Dev
-    sentence: This might turn into a phycological horror instead of puzzle game.
-    location: 1
-    portrait: {fileID: 7820491977990273890, guid: 6ac050cd0b36dd74da7403e463f22ef7, type: 3}
-  - speaker: Player
-    sentence: Dude, let me start
-    location: 0
-    portrait: {fileID: 0}
-  - speaker: Dev
-    sentence: Oh, right! My bad!
-    location: 1
-    portrait: {fileID: 0}
   - speaker: Phone
     sentence: '*ring**ring* Hey we got a homicide in the woods, I need you to go.'
     location: 0

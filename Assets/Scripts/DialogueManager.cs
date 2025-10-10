@@ -15,6 +15,9 @@ public class DialogueManager : MonoBehaviour
     private Queue<Dialogue> lines;
     public static DialogueManager instance;
 
+    // --- State Control ---
+    private bool isTyping = false;
+
     private void Awake()
     {
         if (instance == null)
@@ -28,13 +31,11 @@ public class DialogueManager : MonoBehaviour
         }
     }
 
-    // Call this method from another script to start a conversation
     public void StartDialogue(Conversation conversation)
     {
-        dialoguePanel.SetActive(true); // Show the dialogue box
-        lines.Clear(); // Clear any previous conversation
+        dialoguePanel.SetActive(true); 
+        lines.Clear();
 
-        // Add all lines from the conversation asset to our queue
         foreach (Dialogue line in conversation.lines)
         {
             lines.Enqueue(line);
@@ -43,10 +44,8 @@ public class DialogueManager : MonoBehaviour
         DisplayNextLine();
     }
 
-    // Displays the next line in the queue
     public void DisplayNextLine()
     {
-        // If there are no more lines, end the dialogue
         if (lines.Count == 0)
         {
             EndDialogue();
@@ -60,34 +59,31 @@ public class DialogueManager : MonoBehaviour
             StopCoroutine(typingCoroutine);
         }
 
-        // Set the speaker name once
         speakerNameText.text = currentLine.speaker;
-
-        // Start the typewriter effect
         typingCoroutine = StartCoroutine(TypeSentence(currentLine.sentence));
     }
 
     IEnumerator TypeSentence(string sentence)
     {
-        dialogueText.text = ""; // Clear the text box
+        isTyping = true; // Lock input
+        dialogueText.text = ""; 
         foreach (char letter in sentence.ToCharArray())
         {
             dialogueText.text += letter;
             yield return new WaitForSeconds(typingSpeed);
         }
+        isTyping = false; // Unlock input
     }
 
-    // Hides the dialogue box
     void EndDialogue()
     {
         dialoguePanel.SetActive(false);
     }
 
-    // Check for player input to advance dialogue
     void Update()
     {
-        // Only check for input if the dialogue panel is active
-        if (dialoguePanel.activeInHierarchy && Input.GetKeyDown(KeyCode.Space))
+        // Only advance dialogue if the panel is active, space is pressed, AND we are not currently typing.
+        if (dialoguePanel.activeInHierarchy && Input.GetKeyDown(KeyCode.Space) && !isTyping)
         {
             DisplayNextLine();
         }

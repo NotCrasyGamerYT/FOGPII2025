@@ -1,0 +1,23 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 84e1b36045ddb6e439393618dc738f96, type: 3}
+  m_Name: Memory1
+  m_EditorClassIdentifier: 
+  lines:
+  - speaker: Detective
+    sentence: Where my am I?
+    location: 1
+    portrait: {fileID: 5200785317777101053, guid: bea6a6e480dedd948a06713a5c524695, type: 3}
+  - speaker: Detective
+    sentence: This looks familar. I should look around for objects.
+    location: 1
+    portrait: {fileID: 5200785317777101053, guid: bea6a6e480dedd948a06713a5c524695, type: 3}

@@ -1,15 +1,8 @@
 using UnityEngine;
-using UnityEngine.UI;
-
 public class PlayerInteractions : MonoBehaviour
 {
-    public Button talkButton;
-    private NPC currentNPC;
 
-    void Start()
-    {
-        talkButton.gameObject.SetActive(false);
-    }
+    private NPC currentNPC;
 
     private void OnTriggerEnter2D(Collider2D other)
     {
@@ -17,7 +10,7 @@ public class PlayerInteractions : MonoBehaviour
         if (npc != null)
         {
             currentNPC = npc;
-            talkButton.gameObject.SetActive(true);
+            currentNPC.ShowPrompt(true);
         }
     }
 
@@ -25,17 +18,31 @@ public class PlayerInteractions : MonoBehaviour
     {
         if (other.GetComponent<NPC>() == currentNPC)
         {
+            if (currentNPC != null)
+            {
+                currentNPC.ShowPrompt(false);
+            }
             currentNPC = null;
-            talkButton.gameObject.SetActive(false);
         }
     }
 
-    public void OnTalkButtonPressed()
+    void Update()
     {
-        if (currentNPC != null)
+        if (currentNPC != null && Input.GetKeyDown(KeyCode.E))
         {
-            DialogueManager.instance.StartDialogue(currentNPC.conversation);
-            talkButton.gameObject.SetActive(false);
+            currentNPC.ShowPrompt(false);
+
+            if (DialogueManager.instance != null)
+                DialogueManager.instance.StartDialogue(currentNPC.conversation);
+
         }
+
+        if (currentNPC != null && Input.GetKeyDown(KeyCode.R))
+        {
+            currentNPC.ShowPrompt(false);
+
+            UnityEngine.SceneManagement.SceneManager.LoadScene(UnityEngine.SceneManagement.SceneManager.GetActiveScene().buildIndex + 1);
+        }
+        
     }
 }

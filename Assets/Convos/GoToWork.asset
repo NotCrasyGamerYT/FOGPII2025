@@ -10,13 +10,10 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 84e1b36045ddb6e439393618dc738f96, type: 3}
-  m_Name: Conversation
+  m_Name: GoToWork
   m_EditorClassIdentifier: 
   lines:
-  - speaker: Dev
-    sentence: "Hello again! Apologies for the lack of content, I have been mainly
-      working on senior project for the past several weeks. I haven\u2019t touched
-      this game at all. Good news though! I finally have lore!! So I will need to
-      revamp the game and probably start over! Again, sorry for the lack of content! "
+  - speaker: Abigail
+    sentence: Time to work (Press R to continue)
     location: 0
     portrait: {fileID: 0}

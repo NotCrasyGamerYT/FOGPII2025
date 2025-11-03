@@ -13,23 +13,18 @@ MonoBehaviour:
   m_Name: IntroConvo
   m_EditorClassIdentifier: 
   lines:
-  - speaker: Phone
-    sentence: '*ring**ring* Hey we got a homicide in the woods, I need you to go.'
+  - speaker: 
+    sentence: Welcome to demo three! Here is a quick rundown of the controls. To
+      continue through the dialogue, press the space button. To interact with objects,
+      press E when prompted. There is an inventory system in the works currently,
+      there are some bugs. Moving on to the story.
     location: 0
     portrait: {fileID: 0}
-  - speaker: Player
-    sentence: '*sigh* I''m over 10 hours in overtime, can you send someone else?'
-    location: 1
-    portrait: {fileID: 0}
-  - speaker: Phone
-    sentence: Unforunately, you are closer to the area. I am sorry. *hangs up*
+  - speaker: 
+    sentence: "You are a 28 year old female who works at an office. You are actually
+      the boss of the company. Your name is Abigail Collins, your husband\u2019s
+      name is Frank Collins. Life has been normal for the most part, until you start
+      receiving love tokens at random\u2026\u2026 (Click the chocolate\u2019s to
+      continue)"
     location: 0
-    portrait: {fileID: 0}
-  - speaker: Player
-    sentence: '*sigh* Here we go'
-    location: 1
-    portrait: {fileID: 0}
-  - speaker: System
-    sentence: Click on the car to contiue
-    location: 1
     portrait: {fileID: 0}

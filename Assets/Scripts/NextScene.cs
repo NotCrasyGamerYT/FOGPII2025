@@ -9,4 +9,9 @@ public class NextScene : MonoBehaviour
     {
         UnityEngine.SceneManagement.SceneManager.LoadScene(UnityEngine.SceneManagement.SceneManager.GetActiveScene().buildIndex + 1);
     }
+
+    public void RestartScene()
+    {
+        SceneManager.LoadScene("StartMenu");
+    }
 }

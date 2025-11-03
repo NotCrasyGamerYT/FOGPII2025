@@ -10,14 +10,10 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 84e1b36045ddb6e439393618dc738f96, type: 3}
-  m_Name: PictureFrame
+  m_Name: Transition
   m_EditorClassIdentifier: 
   lines:
-  - speaker: 
-    sentence: This....this is me and my best friend.....
-    location: 0
-    portrait: {fileID: 0}
-  - speaker: 
-    sentence: Why is this here?
-    location: 0
+  - speaker: N
+    sentence: After a long day of work, you come home to see your husband.
+    location: 1
     portrait: {fileID: 0}

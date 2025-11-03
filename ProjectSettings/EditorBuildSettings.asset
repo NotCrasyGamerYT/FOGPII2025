@@ -15,14 +15,17 @@ EditorBuildSettings:
     path: Assets/Scenes/Intro.unity
     guid: 638dda70ee66c2e489d7eb3d540c8cf1
   - enabled: 1
-    path: Assets/Scenes/Main.unity
+    path: Assets/Scenes/LivingRoom1.unity
     guid: e36ab92a0ea255b489990d6406d24400
   - enabled: 1
-    path: Assets/Scenes/Memory1.unity
+    path: Assets/Scenes/Transition.unity
     guid: f9d7478c62b1cb44b91c27663c8bfdb5
   - enabled: 1
-    path: Assets/Scenes/CrimeScene.unity
+    path: Assets/Scenes/LivingRoom2.unity
     guid: 628ac453422da204c8ea0f9e5c0a332e
+  - enabled: 1
+    path: Assets/Scenes/Office.unity
+    guid: 640ffdae218db6e4c9177989e72ba1e7
   m_configObjects:
     com.unity.input.settings.actions: {fileID: -944628639613478452, guid: 2bcd2660ca9b64942af0de543d8d7100, type: 3}
   m_UseUCBPForAssetBundles: 0

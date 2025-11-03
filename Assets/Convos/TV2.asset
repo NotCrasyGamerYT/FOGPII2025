@@ -1,0 +1,26 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 84e1b36045ddb6e439393618dc738f96, type: 3}
+  m_Name: TV2
+  m_EditorClassIdentifier: 
+  lines:
+  - speaker: TV
+    sentence: "Breaking news, a woman named Celine Adams was murdered earlier this
+      afternoon. Police are saying someone pushed her down a cliff, however, they
+      don\u2019t know who did it."
+    location: 0
+    portrait: {fileID: 2355326786753601592, guid: 5bc4bb4ed8fcad340b6a1ba64d5bf84a, type: 3}
+  - speaker: Abigail
+    sentence: "Oh my god! That\u2019s my best friend! Oh god! I need to tell frank
+      about this in the bedroom!"
+    location: 1
+    portrait: {fileID: 0}

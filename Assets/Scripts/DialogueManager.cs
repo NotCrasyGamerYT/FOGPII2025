@@ -12,6 +12,11 @@ public class DialogueManager : MonoBehaviour
     public float typingSpeed = 0.02f;
     private Coroutine typingCoroutine;
     public GameObject dialoguePanel; 
+    public Image leftPortraitImage;
+    public Image rightPortraitImage;
+    public Image generalImagePlaceholder;
+
+
     private Queue<Dialogue> lines;
     public static DialogueManager instance;
 
@@ -34,6 +39,11 @@ public class DialogueManager : MonoBehaviour
     public void StartDialogue(Conversation conversation)
     {
         dialoguePanel.SetActive(true); 
+
+        if (leftPortraitImage != null) leftPortraitImage.gameObject.SetActive(false);
+        if (rightPortraitImage != null) rightPortraitImage.gameObject.SetActive(false);
+        if (generalImagePlaceholder != null) generalImagePlaceholder.gameObject.SetActive(false);
+
         lines.Clear();
 
         foreach (Dialogue line in conversation.lines)
@@ -60,29 +70,79 @@ public class DialogueManager : MonoBehaviour
         }
 
         speakerNameText.text = currentLine.speaker;
+
+        if (currentLine.portrait != null)
+        {
+            if (currentLine.location == PortraitLocation.Left)
+            {
+                if (leftPortraitImage != null)
+                {
+                    leftPortraitImage.sprite = currentLine.portrait;
+                    leftPortraitImage.gameObject.SetActive(true);
+                }
+                if (rightPortraitImage != null)
+                {
+                    rightPortraitImage.gameObject.SetActive(false);
+                }
+            }
+            else // It's PortraitLocation.Right
+            {
+                if (rightPortraitImage != null)
+                {
+                    rightPortraitImage.sprite = currentLine.portrait;
+                    rightPortraitImage.gameObject.SetActive(true);
+                }
+                if (leftPortraitImage != null)
+                {
+                    leftPortraitImage.gameObject.SetActive(false);
+                }
+            }
+        }
+        else 
+        {
+            if (leftPortraitImage != null) leftPortraitImage.gameObject.SetActive(false);
+            if (rightPortraitImage != null) rightPortraitImage.gameObject.SetActive(false);
+        }
+        
+        if (currentLine.portrait != null)
+        {
+            if (generalImagePlaceholder != null)
+            {
+                generalImagePlaceholder.sprite = currentLine.portrait;
+                generalImagePlaceholder.gameObject.SetActive(true);
+            }
+        }
+        else
+        {
+            if (generalImagePlaceholder != null) generalImagePlaceholder.gameObject.SetActive(false);
+        }
+
         typingCoroutine = StartCoroutine(TypeSentence(currentLine.sentence));
     }
 
     IEnumerator TypeSentence(string sentence)
     {
-        isTyping = true; // Lock input
+        isTyping = true; 
         dialogueText.text = ""; 
         foreach (char letter in sentence.ToCharArray())
         {
             dialogueText.text += letter;
             yield return new WaitForSeconds(typingSpeed);
         }
-        isTyping = false; // Unlock input
+        isTyping = false;
     }
 
     void EndDialogue()
     {
         dialoguePanel.SetActive(false);
+
+        if (leftPortraitImage != null) leftPortraitImage.gameObject.SetActive(false);
+        if (rightPortraitImage != null) rightPortraitImage.gameObject.SetActive(false);
+        if (generalImagePlaceholder != null) generalImagePlaceholder.gameObject.SetActive(false);
     }
 
     void Update()
     {
-        // Only advance dialogue if the panel is active, space is pressed, AND we are not currently typing.
         if (dialoguePanel.activeInHierarchy && Input.GetKeyDown(KeyCode.Space) && !isTyping)
         {
             DisplayNextLine();

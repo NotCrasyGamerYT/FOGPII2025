@@ -16,4 +16,18 @@ MonoBehaviour:
   - speaker: Letter
     sentence: Hey Frank, see you tomorrow!!
     location: 0
-    portrait: {fileID: -205913969163952845, guid: 6ae585586458088419493ca6a0f9007d, type: 3}
+    portrait: {fileID: 5200785317777101053, guid: bea6a6e480dedd948a06713a5c524695, type: 3}
+    isChoicePoint: 0
+    choices: []
+  - speaker: Abigail
+    sentence: Who is this from??? UGH- Where is he!!!
+    location: 0
+    portrait: {fileID: 5200785317777101053, guid: bea6a6e480dedd948a06713a5c524695, type: 3}
+    isChoicePoint: 0
+    choices: []
+  - speaker: Abigail
+    sentence: Anyway, I'll just have to talk to him when I get to work.
+    location: 0
+    portrait: {fileID: 5200785317777101053, guid: bea6a6e480dedd948a06713a5c524695, type: 3}
+    isChoicePoint: 0
+    choices: []

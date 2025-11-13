@@ -17,3 +17,7 @@ MonoBehaviour:
     sentence: After a long day of work, you come home to see your husband.
     location: 1
     portrait: {fileID: 0}
+    isChoicePoint: 1
+    choices:
+    - choiceText: Go to Bedroom
+      triggersSceneLoad: 1

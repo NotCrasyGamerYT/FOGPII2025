@@ -13,14 +13,16 @@ MonoBehaviour:
   m_Name: IntroConvo
   m_EditorClassIdentifier: 
   lines:
-  - speaker: 
+  - speaker: N
     sentence: Welcome to demo three! Here is a quick rundown of the controls. To
       continue through the dialogue, press the space button. To interact with objects,
       press E when prompted. There is an inventory system in the works currently,
       there are some bugs. Moving on to the story.
     location: 0
     portrait: {fileID: 0}
-  - speaker: 
+    isChoicePoint: 0
+    choices: []
+  - speaker: N
     sentence: "You are a 28 year old female who works at an office. You are actually
       the boss of the company. Your name is Abigail Collins, your husband\u2019s
       name is Frank Collins. Life has been normal for the most part, until you start
@@ -28,3 +30,7 @@ MonoBehaviour:
       continue)"
     location: 0
     portrait: {fileID: 0}
+    isChoicePoint: 1
+    choices:
+    - choiceText: Move on
+      triggersSceneLoad: 1

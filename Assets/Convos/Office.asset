@@ -1,0 +1,41 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 84e1b36045ddb6e439393618dc738f96, type: 3}
+  m_Name: Office
+  m_EditorClassIdentifier: 
+  lines:
+  - speaker: Abigail
+    sentence: What a terrible day yesterday...
+    location: 0
+    portrait: {fileID: -1213295810217710289, guid: 802ef49ef99735746888455377bf382f, type: 3}
+    isChoicePoint: 0
+    choices: []
+  - speaker: Co-Worker
+    sentence: Hey I've heard about your best friend! I'm so sorry about that!
+    location: 1
+    portrait: {fileID: -2255562535738000052, guid: da61a1be4490b4b488baf236673f927a, type: 3}
+    isChoicePoint: 0
+    choices: []
+  - speaker: Abigail
+    sentence: Yeah, thank you Walter......
+    location: 0
+    portrait: {fileID: -1213295810217710289, guid: 802ef49ef99735746888455377bf382f, type: 3}
+    isChoicePoint: 0
+    choices: []
+  - speaker: Abigail
+    sentence: Yeah, thank you Walter......
+    location: 0
+    portrait: {fileID: 0}
+    isChoicePoint: 1
+    choices:
+    - choiceText: Continue
+      triggersSceneLoad: 1

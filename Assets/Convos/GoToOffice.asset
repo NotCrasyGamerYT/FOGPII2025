@@ -10,14 +10,14 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 84e1b36045ddb6e439393618dc738f96, type: 3}
-  m_Name: BedRoomDoor2
+  m_Name: GoToOffice
   m_EditorClassIdentifier: 
   lines:
-  - speaker: Abigail
-    sentence: I-I-I can't believe this (Bedroom 2)
-    location: 1
+  - speaker: N
+    sentence: You have to choice but to sleep. So many questions left unanswered.
+    location: 0
     portrait: {fileID: 0}
     isChoicePoint: 1
     choices:
-    - choiceText: Go to BedRoom
+    - choiceText: To work
       triggersSceneLoad: 1

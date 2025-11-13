@@ -14,6 +14,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   lines:
   - speaker: Abigail
-    sentence: Time to work (Press R to continue)
+    sentence: Time to work
     location: 0
     portrait: {fileID: 0}
+    isChoicePoint: 1
+    choices:
+    - choiceText: Go to Office
+      triggersSceneLoad: 1

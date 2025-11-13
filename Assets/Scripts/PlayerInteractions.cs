@@ -1,8 +1,7 @@
 using UnityEngine;
 public class PlayerInteractions : MonoBehaviour
 {
-
-    private NPC currentNPC;
+private NPC currentNPC;
 
     private void OnTriggerEnter2D(Collider2D other)
     {
@@ -29,20 +28,15 @@ public class PlayerInteractions : MonoBehaviour
     void Update()
     {
         if (currentNPC != null && Input.GetKeyDown(KeyCode.E))
-        {
-            currentNPC.ShowPrompt(false);
+            {
+                currentNPC.ShowPrompt(false);
 
             if (DialogueManager.instance != null)
+            {
                 DialogueManager.instance.StartDialogue(currentNPC.conversation);
+            }
 
-        }
-
-        if (currentNPC != null && Input.GetKeyDown(KeyCode.R))
-        {
-            currentNPC.ShowPrompt(false);
-
-            UnityEngine.SceneManagement.SceneManager.LoadScene(UnityEngine.SceneManagement.SceneManager.GetActiveScene().buildIndex + 1);
-        }
+            }
         
     }
 }

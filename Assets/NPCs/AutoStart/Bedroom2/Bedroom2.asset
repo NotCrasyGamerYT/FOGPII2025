@@ -1,0 +1,34 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fd506bcd2b77cba4cb29d6f6ff1d9649, type: 3}
+  m_Name: Bedroom2
+  m_EditorClassIdentifier: 
+  npcName: Abigial
+  npcPortrait: {fileID: 2324236343598682440, guid: 3fbca539384073a4ca2ea3de43f56f59, type: 3}
+  dialogueLines:
+  - FRANK! WHERE HAVE YOU BEEN!
+  - Are you having an affair with me??
+  - 'Frank: *Sigh*'
+  - 'Frank: Yes...well...I was.'
+  - Well, sending chocolates and having a teddy bear on the bed won't help this situation.
+  - 'Frank: Those aren''t from me?'
+  - What? Not from you? Who sent these then?
+  - 'Frank: I am not sure, but I''ll be at the cabin later today.'
+  - Ok.
+  - Let me look at the teddy bear.
+  typingSpeed: 0.05
+  typingSound: {fileID: 8300000, guid: 8be0661358d2f6b48b9ff0de8c84f43a, type: 3}
+  voiceVolume: 1
+  autoProgressLines: 01010101010101010100
+  autoProgressDelay: 1.5
+  voiceSound: {fileID: 8300000, guid: 8be0661358d2f6b48b9ff0de8c84f43a, type: 3}
+  voicePitch: 1

@@ -1,0 +1,28 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fd506bcd2b77cba4cb29d6f6ff1d9649, type: 3}
+  m_Name: Transition2
+  m_EditorClassIdentifier: 
+  npcName: Dev
+  npcPortrait: {fileID: 7820491977990273890, guid: 6ac050cd0b36dd74da7403e463f22ef7, type: 3}
+  dialogueLines:
+  - So many things happened, you have 4 items to review.
+  - Take a look at them in your inventory slot.
+  - Can you figure out who it is?
+  - Let's find out soon
+  typingSpeed: 0.05
+  typingSound: {fileID: 8300000, guid: 8be0661358d2f6b48b9ff0de8c84f43a, type: 3}
+  voiceVolume: 1
+  autoProgressLines: 01010100
+  autoProgressDelay: 1.5
+  voiceSound: {fileID: 8300000, guid: 8be0661358d2f6b48b9ff0de8c84f43a, type: 3}
+  voicePitch: 1

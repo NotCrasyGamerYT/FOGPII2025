@@ -1,0 +1,30 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fd506bcd2b77cba4cb29d6f6ff1d9649, type: 3}
+  m_Name: LivingRoom2(Auto)
+  m_EditorClassIdentifier: 
+  npcName: Abiigail
+  npcPortrait: {fileID: 2324236343598682440, guid: 3fbca539384073a4ca2ea3de43f56f59, type: 3}
+  npcPortraitAlt: {fileID: 0}
+  dialogueLines:
+  - Frank, I'm home!
+  - .....
+  - Hmm...He is not here.
+  - Maybe he is in the bedroom.
+  - I should check the news first.
+  typingSpeed: 0.05
+  typingSound: {fileID: 8300000, guid: 8be0661358d2f6b48b9ff0de8c84f43a, type: 3}
+  voiceVolume: 1
+  autoProgressLines: 0101010100
+  autoProgressDelay: 1.5
+  voiceSound: {fileID: 8300000, guid: 8be0661358d2f6b48b9ff0de8c84f43a, type: 3}
+  voicePitch: 1

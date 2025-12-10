@@ -1,0 +1,35 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fd506bcd2b77cba4cb29d6f6ff1d9649, type: 3}
+  m_Name: New NPC Dialogue
+  m_EditorClassIdentifier: 
+  npcName: Walter
+  npcPortrait: {fileID: -2255562535738000052, guid: da61a1be4490b4b488baf236673f927a, type: 3}
+  dialogueLines:
+  - Hello, darling.
+  - 'Abigail: Walter?! Is that Frank you murdered??'
+  - Isn't it obvious??
+  - I'm in love with you!
+  - However, I had to get rid of.... items that were in the way.
+  - 'Abigail: Frank...... Celine....'
+  - The gifts were a perfection distraction.
+  - Now you are now mine, FOREVER. Hehehehe
+  - 'Abigail: No!! You can''t!!!'
+  - It's too late......
+  - (Go on to the next scene)
+  typingSpeed: 0.05
+  typingSound: {fileID: 8300000, guid: 8be0661358d2f6b48b9ff0de8c84f43a, type: 3}
+  voiceVolume: 1
+  autoProgressLines: 0101010101010101010100
+  autoProgressDelay: 1.5
+  voiceSound: {fileID: 8300000, guid: 8be0661358d2f6b48b9ff0de8c84f43a, type: 3}
+  voicePitch: 1

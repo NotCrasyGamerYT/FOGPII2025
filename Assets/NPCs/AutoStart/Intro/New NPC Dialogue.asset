@@ -1,0 +1,36 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fd506bcd2b77cba4cb29d6f6ff1d9649, type: 3}
+  m_Name: New NPC Dialogue
+  m_EditorClassIdentifier: 
+  npcName: Dev
+  npcPortrait: {fileID: 7820491977990273890, guid: 6ac050cd0b36dd74da7403e463f22ef7, type: 3}
+  dialogueLines:
+  - Hello, Welcome to Demo!
+  - Here is a quick run down of the controls.
+  - WASD to move.
+  - E to interact.
+  - When Prompted, press the button to go to the next scene.
+  - If you dont remember, you can access them in the setttings. Using esc
+  - Now on to the story.
+  - You are a 28 year old female who works at an office.
+  - Your name is Abigail Collins, your husbands name is Frank.
+  - Life has been normal for the most part.
+  - Until you keep recieving love tokens. (which is this item to the left of me)
+  - Go on to the next screen.
+  typingSpeed: 0.05
+  typingSound: {fileID: 8300000, guid: 8be0661358d2f6b48b9ff0de8c84f43a, type: 3}
+  voiceVolume: 1
+  autoProgressLines: 010101010101010101010100
+  autoProgressDelay: 1.5
+  voiceSound: {fileID: 8300000, guid: 8be0661358d2f6b48b9ff0de8c84f43a, type: 3}
+  voicePitch: 1
